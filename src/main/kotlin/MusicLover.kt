@@ -12,7 +12,7 @@ fun main() {
 
     val discount = if (lastAmount <= 1000_00) {
         nowAmount
-    } else if (lastAmount > 1000_00 && lastAmount <= 10000_00) {
+    } else if (lastAmount <= 10000_00) {
         nowAmount - DISCOUNT_LOWER
     } else {
         nowAmount - ((nowAmount * DISCOUNT_HIGHER_PERCENT) / 100)
